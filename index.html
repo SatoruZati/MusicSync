@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Gift for Aalu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player-card">
+             <div class="profile-section">
+                <img src="hehe.jpg" alt="Profile Image" class="profile-img">
+                <div class="profile-text">
+                    <div class="profile-name">AyushIteddio</div>
+                    <div class="profile-handle">@ayushiteddio</div>
+                </div>
+            </div>
+            <div class="video-container">
+                 <video id="video-player" controls width="800">
+                    <source src="Lady Gaga, Bruno Mars - Die With A Smile 720.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                 </video>
+            </div>
+           <div class="controls-container">
+             <div class="progress-section">
+                 <span id="current-time" class="time-indicator">0:00</span>
+                   <input type="range" id="progress-bar" value="0" step="0.01">
+                 <span id="remaining-time" class="time-indicator">-0:00</span>
+             </div>
+             <div class="buttons-section">
+                <button id="prev-button" class="player-button" > &lt; </button>
+                <button id="play-button" class="player-button"> ► </button>
+                <button id="next-button" class="player-button"> &gt; </button>
+             </div>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

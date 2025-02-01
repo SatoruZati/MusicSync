@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    background-color: #490505;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 70%; /* Set container width for percentage */
+    max-width: 800px; /* Set max width to prevent it from getting too big */
+}
+
+.player-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%; /* Set card width to 100% of container */
+    max-width: 100%; /* Ensure that the card does not overflow */
+}
+
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-text {
+    text-align: left;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.profile-handle {
+    color: gray;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+.video-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+
+}
+.progress-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 5px 0;
+}
+.time-indicator {
+    font-size: 0.7em;
+}
+#progress-bar {
+     flex: 1;
+    margin: 0 5px;
+    -webkit-appearance: none; /* for chrome, safari */
+    appearance: none;
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+}
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buttons-section {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-button {
+  font-size: 1.3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
